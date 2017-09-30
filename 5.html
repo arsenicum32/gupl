@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>pack</title>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+  </head>
+  <body>
+    <span>link will be avaliable in</span>
+    <h1 id='t'>01:30:00</h1>
+    <script>
+      setInterval(()=>{
+        document.getElementById('t').innerHTML = moment('Sun Oct 01 2017 03:10:19 GMT+0200').fromNow();
+      }, 2000)
+    </script>
+  </body>
+</html>
